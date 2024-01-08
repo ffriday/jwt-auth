@@ -1,22 +1,23 @@
 module.exports = {
   env: {
     browser: true,
-    es2021: true
+    es2021: true,
   },
   extends: [
-    'airbnb',
-    'airbnb-typescript',
-    'airbnb/hooks',
-    'plugin:react/recommended',
-    'standard-with-typescript'
+    "airbnb",
+    "airbnb-typescript",
+    "airbnb/hooks",
+    "plugin:react/recommended",
+    "standard-with-typescript",
+    "plugin:prettier/recommended",
   ],
   overrides: [],
   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module'
+    ecmaVersion: "latest",
+    sourceType: "module",
   },
-  plugins: ['react'],
+  plugins: ["react", "prettier"],
   rules: {
-    'react/react-in-jsx-scope': 0
-  }
-}
+    "react/react-in-jsx-scope": 0,
+  },
+};
