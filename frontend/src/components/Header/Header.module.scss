@@ -1,8 +1,11 @@
 @import "../../constants/constants";
 @import "../../constants/mixin";
 
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@500&display=swap');
+
 $buttonsGap: 1em;
 $horizontalPadding: 1em;
+$captionFontSize: 1.5em;
 
 .header {
   @include flexRowFull;
@@ -13,6 +16,13 @@ $horizontalPadding: 1em;
   padding: 0 $horizontalPadding 0 $horizontalPadding;
   background-color: $headerColor;
   color: $headerTextColor;
+
+  h1 {
+    font-family: 'Tektur', sans-serif;
+    @media screen and (max-width: $mediaMobile) {
+      font-size: $captionFontSize;
+    }
+  }
 }
 
 .buttons {
