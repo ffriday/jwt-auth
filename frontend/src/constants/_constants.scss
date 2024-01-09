@@ -1,0 +1,11 @@
+//dimensions
+$header-height: 4em;
+$footer-height: 2em;
+$main-height: calc(100% - $header-height - $footer-height);
+
+//color
+$gray: #33312e;
+$lightGray: #a9a587;
+
+$headerColor: $gray;
+$headerTextColor: $lightGray;

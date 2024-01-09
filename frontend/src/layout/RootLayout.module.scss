@@ -1,0 +1,11 @@
+@import "../constants/_constants";
+
+.rootGrid {
+  width: 100vw;
+  height: 100dvh;
+  flex-grow: 1;
+}
+
+.main {
+  height: $main-height;
+}

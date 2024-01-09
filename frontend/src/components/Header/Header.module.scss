@@ -1,0 +1,22 @@
+@import "../../constants/constants";
+@import "../../constants/mixin";
+
+$buttonsGap: 1em;
+$horizontalPadding: 1em;
+
+.header {
+  @include flexRowFull;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: center;
+  height: $header-height;
+  padding: 0 $horizontalPadding 0 $horizontalPadding;
+  background-color: $headerColor;
+  color: $headerTextColor;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: $buttonsGap;
+}

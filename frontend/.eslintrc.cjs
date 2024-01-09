@@ -16,7 +16,7 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
     tsconfigRootDir: __dirname,
-    project: ['./tsconfig.json', './tsconfig.node.json', 'testConfig.ts'],
+    project: ['./tsconfig.json', './tsconfig.node.json', 'testconfig.ts'],
   },
   plugins: ['react', 'prettier'],
   rules: {
@@ -24,5 +24,6 @@ module.exports = {
     '@typescript-eslint/triple-slash-reference': 0,
     '@typescript-eslint/prefer-nullish-coalescing': 0,
     '@typescript-eslint/strict-boolean-expressions': 0,
+    'import/prefer-default-export': 0,
   },
 };
