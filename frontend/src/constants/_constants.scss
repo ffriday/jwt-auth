@@ -1,8 +1,8 @@
 //dimensions
 $mediaMobile: 430px;
 $header-height: 4em;
-$footer-height: 2em;
-$main-height: calc(100% - $header-height - $footer-height);
+$footer-height: 3em;
+$main-height: calc(100dvh - $header-height - $footer-height);
 
 //color
 $gray: #33312e;
@@ -10,3 +10,4 @@ $lightGray: #a9a587;
 
 $headerColor: $gray;
 $headerTextColor: $lightGray;
+$footerColor: $gray;
