@@ -1,0 +1,16 @@
+@import "../constants/_constants";
+
+.rootGrid {
+  width: 100%;
+  flex-grow: 1;
+}
+
+.main {
+  min-height: $main-height;
+  max-width: 100vw;
+}
+
+.headerContainer {
+  position: sticky;
+  top: 0;
+}

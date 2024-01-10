@@ -1,0 +1,30 @@
+@import "../../constants/constants";
+@import "../../constants/mixin";
+
+$buttonsGap: 1em;
+$horizontalPadding: 1em;
+$captionFontSize: 1.5em;
+
+.header {
+  @include flexRowFull;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: center;
+  height: $header-height;
+  padding: 0 $horizontalPadding 0 $horizontalPadding;
+  background-color: $headerColor;
+  color: $headerTextColor;
+
+  h1 {
+    font-family: 'Tektur', sans-serif;
+    @media screen and (max-width: $mediaMobile) {
+      font-size: $captionFontSize;
+    }
+  }
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: $buttonsGap;
+}
